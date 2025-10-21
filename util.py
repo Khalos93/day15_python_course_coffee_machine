@@ -3,7 +3,7 @@ from enum import Enum
 
 class ValidUserInput(Enum):
     espresso = "espresso"
-    capuccino = "capuccino"
+    capuccino = "cappuccino"
     latte = "latte"
     report = "report"
     off = "off"
@@ -69,14 +69,6 @@ def collect_money() -> list[int]:
             print("Invalid input.")
             continue
 
-        # total = (
-        #     five_pence * 0.05
-        #     + ten_pence * 0.1
-        #     + twenty_pence * 0.20
-        #     + fifty_pence * 0.5
-        #     + one_pound
-        #     + two_pound * 2
-        # )
         money_collected = [
             five_pence,
             ten_pence,
